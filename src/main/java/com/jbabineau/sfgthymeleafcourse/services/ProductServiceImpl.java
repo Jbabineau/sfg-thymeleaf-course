@@ -77,7 +77,7 @@ public class ProductServiceImpl implements ProductService{
 
 
         Product springCoreUltimate = new Product();
-        springCoreUltimate.setId(2);
+        springCoreUltimate.setId(5);
         springCoreUltimate.setCourseName("Spring Core Ultimate");
         springCoreUltimate.setCourseSubtitle("Ultimate Bundle of Spring Core!");
         springCoreUltimate.setAuthor(jt);
@@ -90,10 +90,10 @@ public class ProductServiceImpl implements ProductService{
         springCoreUltimate.setImageUrl("SpringCoreUltimateThumb.png");
         springCoreUltimate.getProductCategories().add(springCoreCat);
         springCoreUltimate.getProductCategories().add(springBootCat);
-        productMap.put(2, springCoreUltimate);
+        productMap.put(5, springCoreUltimate);
 
         Product thymeleaf = new Product();
-        thymeleaf.setId(3);
+        thymeleaf.setId(6);
         thymeleaf.setCourseName("Thymeleaf");
         thymeleaf.setCourseSubtitle("Thymeleaf and Spring!");
         thymeleaf.setAuthor(jt);
@@ -105,10 +105,10 @@ public class ProductServiceImpl implements ProductService{
         thymeleaf.setPrice(new BigDecimal("199"));
         thymeleaf.setImageUrl("ThymeleafThumb.png");
         thymeleaf.getProductCategories().add(thymeleafCat);
-        productMap.put(3, thymeleaf);
+        productMap.put(6, thymeleaf);
 
         Product springCore = new Product();
-        springCore.setId(4);
+        springCore.setId(2);
         springCore.setCourseName("Spring Core");
         springCore.setCourseSubtitle("Spring Core - mastering Spring!");
         springCore.setAuthor(jt);
@@ -121,10 +121,10 @@ public class ProductServiceImpl implements ProductService{
         springCore.setImageUrl("SpringCoreThumb.png");
         springCore.getProductCategories().add(springCoreCat);
         springCore.getProductCategories().add(springBootCat);
-        productMap.put(4, springCore);
+        productMap.put(2, springCore);
 
         Product springCoreAdv = new Product();
-        springCoreAdv.setId(5);
+        springCoreAdv.setId(3);
         springCoreAdv.setCourseName("Spring Core Advanced");
         springCoreAdv.setCourseSubtitle("Advanced Spring Core!");
         springCoreAdv.setAuthor(jt);
@@ -134,13 +134,13 @@ public class ProductServiceImpl implements ProductService{
                 "\n" +
                 "You will learn what Dependency Injection is, and how Spring uses Inversion of Control to leverage Dependency Injection. Next in my course, I will walk you step by step through building your very first Spring Framework application. I'll show you hot to use the Spring Initializer and Spring Boot to jumpstart your Spring Framework project. Ideally, you can follow along and create your own Spring project. I know it can be frustrating to follow along in a course and run into errors. So don't worry, I have the complete source code examples in Git for you to checkout and use.");
         springCoreAdv.setPrice(new BigDecimal("199"));
-        springCoreAdv.setImageUrl("SpringCoreAdvanced.png");
+        springCoreAdv.setImageUrl("SpringCoreAdvancedThumb.png");
         springCoreAdv.getProductCategories().add(springCoreCat);
         springCoreAdv.getProductCategories().add(springBootCat);
-        productMap.put(5, springCoreAdv);
+        productMap.put(3, springCoreAdv);
 
         Product springCoreDevOps = new Product();
-        springCoreDevOps.setId(6);
+        springCoreDevOps.setId(4);
         springCoreDevOps.setCourseName("Spring Core Dev-Ops");
         springCoreDevOps.setCourseSubtitle("Deploying Spring in the Enterprise and the cloud!");
         springCoreDevOps.setAuthor(jt);
@@ -150,9 +150,9 @@ public class ProductServiceImpl implements ProductService{
                 "\n" +
                 "You will learn what Dependency Injection is, and how Spring uses Inversion of Control to leverage Dependency Injection. Next in my course, I will walk you step by step through building your very first Spring Framework application. I'll show you hot to use the Spring Initializer and Spring Boot to jumpstart your Spring Framework project. Ideally, you can follow along and create your own Spring project. I know it can be frustrating to follow along in a course and run into errors. So don't worry, I have the complete source code examples in Git for you to checkout and use.");
         springCoreDevOps.setPrice(new BigDecimal("199"));
-        springCoreDevOps.setImageUrl("SpringCoreDevOps.png");
+        springCoreDevOps.setImageUrl("SpringCoreDevOpsThumb.png");
         springCoreDevOps.getProductCategories().add(springCoreCat);
         springCoreDevOps.getProductCategories().add(springBootCat);
-        productMap.put(6, springCoreDevOps);
+        productMap.put(4, springCoreDevOps);
     }
 }
