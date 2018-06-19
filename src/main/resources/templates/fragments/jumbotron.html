@@ -2,18 +2,18 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8"/>
-    <title>Spring Framework Guru - Course Name</title>
-    <link href="../static/css/bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet" media="screen"
-            th:href="@{/css/bootstrap-3.3.7-dist/css/bootstrap.min.css}"/>
+    <title th:text="#{index.page.title}"> Page Title</title>
+    <link href="../../static/css/bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet" media="screen"
+          th:href="@{/css/bootstrap-3.3.7-dist/css/bootstrap.min.css}"/>
 
-    <script src="../static/js/jquery-3.3.1.min.js"
+    <script src="../../static/js/jquery-3.3.1.min.js"
             th:src="@{/js/jquery-3.3.1.min.js}"></script>
 
     <link th:href="@{/css/custom.css}" rel="stylesheet" media="screen"/>
 
     <style th:remove="all">
         .jumbotron {
-            background: url('../static/images/SpringCoreJumbotron.jpg') no-repeat center center;
+            background: url('../../static/images/SpringCoreJumbotron.jpg') no-repeat center center;
             height: 350px;
             color: white;
             text-shadow: #444 0 1px 1px;
@@ -113,45 +113,11 @@
     </style>
 </head>
 <body>
-<div class="jumbotron" th:replace="fragments/jumbotron :: jumbotron">
-    <div class="container">
-        <h1>Spring Framework Guru</h1>
-        <p class="lead" th:text="#{index.courses.tagline}">Online Courses for Spring Framework</p>
-    </div>
-</div>
-<div class="container">
-    <div class="row">
-        <div class="col-md-12">
-            <h1>Spring Framework Guru - Course Name</h1>
+    <div class="jumbotron" th:fragment="jumbotron">
+        <div class="container">
+            <h1>Spring Framework Guru</h1>
+            <p class="lead" th:text="#{index.courses.tagline}">Tag line</p>
         </div>
     </div>
-    <div class="row">
-        <div class="col-md-6">
-
-            <img src="https://d2vvqscadf4c1f.cloudfront.net/scgeIJ9wRGGNWvK0jAld_ThumbFREE_01.png" th:src="@{/images/SpringIntroThumb.png}"
-                 class="center-block"/>
-
-        </div>
-        <div class="col-md-6">
-            <div>
-                <h2>Course Title</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                    culpa qui officia deserunt mollit anim id est laborum.</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="col-md-offset-6 col-md-4">
-            <button class="btn-success" th:text="#{product.buy.now}">Buy Now!</button>
-        </div>
-    </div>
-</div>
-<div class="footer" th:replace="fragments/footer :: footer">
-    <p>footer</p>
-</div>
 </body>
 </html>

@@ -113,7 +113,7 @@
     </style>
 </head>
 <body>
-    <div class="jumbotron">
+    <div class="jumbotron" th:replace="fragments/jumbotron :: jumbotron">
         <div class="container">
             <h1>Spring Framework Guru</h1>
             <p class="lead" th:text="#{index.courses.tagline}">Online Courses for Spring Framework</p>
@@ -359,6 +359,8 @@
         </div>
     </div>
 </div>
-
+<div class="footer" th:replace="fragments/footer :: footer">
+    <p>footer</p>
+</div>
 </body>
 </html>
