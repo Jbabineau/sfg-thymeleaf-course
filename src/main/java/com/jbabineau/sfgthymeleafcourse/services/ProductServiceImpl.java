@@ -3,6 +3,7 @@ package com.jbabineau.sfgthymeleafcourse.services;
 import com.jbabineau.sfgthymeleafcourse.domain.Author;
 import com.jbabineau.sfgthymeleafcourse.domain.Product;
 import com.jbabineau.sfgthymeleafcourse.domain.ProductCategory;
+import org.springframework.stereotype.Service;
 
 import java.math.BigDecimal;
 import java.util.ArrayList;
@@ -10,6 +11,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+@Service
 public class ProductServiceImpl implements ProductService{
 
     private Map<Integer, Product> productMap;
